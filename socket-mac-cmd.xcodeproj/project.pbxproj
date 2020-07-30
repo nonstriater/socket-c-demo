@@ -8,10 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		721E1F2F232A3ED1009148AE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 721E1F2E232A3ED1009148AE /* main.c */; };
+		727F5C8024AD997B006E1F20 /* epoll.c in Sources */ = {isa = PBXBuildFile; fileRef = 727F5C7E24AD997B006E1F20 /* epoll.c */; };
+		727F5C8C24ADA766006E1F20 /* fd_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 727F5C8124ADA4C9006E1F20 /* fd_set.c */; };
+		72A4A83C249B2616009A627A /* select.c in Sources */ = {isa = PBXBuildFile; fileRef = 72A4A83A249B2616009A627A /* select.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		721E1F29232A3ED1009148AE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		727F5C8724ADA74E006E1F20 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		72A4A845249B337B009A627A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +46,31 @@
 /* Begin PBXFileReference section */
 		721E1F2B232A3ED1009148AE /* socket-mac-cmd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "socket-mac-cmd"; sourceTree = BUILT_PRODUCTS_DIR; };
 		721E1F2E232A3ED1009148AE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		727F5C7E24AD997B006E1F20 /* epoll.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = epoll.c; sourceTree = "<group>"; };
+		727F5C7F24AD997B006E1F20 /* epoll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = epoll.h; sourceTree = "<group>"; };
+		727F5C8124ADA4C9006E1F20 /* fd_set.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fd_set.c; sourceTree = "<group>"; };
+		727F5C8B24ADA74E006E1F20 /* socket-fd_set */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "socket-fd_set"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A4A83A249B2616009A627A /* select.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = select.c; sourceTree = "<group>"; };
+		72A4A83B249B2616009A627A /* select.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = select.h; sourceTree = "<group>"; };
+		72A4A849249B337B009A627A /* socket-mac-client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "socket-mac-client"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		721E1F28232A3ED1009148AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727F5C8624ADA74E006E1F20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A4A844249B337B009A627A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				721E1F2B232A3ED1009148AE /* socket-mac-cmd */,
+				72A4A849249B337B009A627A /* socket-mac-client */,
+				727F5C8B24ADA74E006E1F20 /* socket-fd_set */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				721E1F2E232A3ED1009148AE /* main.c */,
+				72A4A83A249B2616009A627A /* select.c */,
+				72A4A83B249B2616009A627A /* select.h */,
+				727F5C7E24AD997B006E1F20 /* epoll.c */,
+				727F5C7F24AD997B006E1F20 /* epoll.h */,
+				727F5C8124ADA4C9006E1F20 /* fd_set.c */,
 			);
 			path = "socket-mac-cmd";
 			sourceTree = "<group>";
@@ -82,6 +131,40 @@
 			productReference = 721E1F2B232A3ED1009148AE /* socket-mac-cmd */;
 			productType = "com.apple.product-type.tool";
 		};
+		727F5C8324ADA74E006E1F20 /* socket-fd_set */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727F5C8824ADA74E006E1F20 /* Build configuration list for PBXNativeTarget "socket-fd_set" */;
+			buildPhases = (
+				727F5C8424ADA74E006E1F20 /* Sources */,
+				727F5C8624ADA74E006E1F20 /* Frameworks */,
+				727F5C8724ADA74E006E1F20 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "socket-fd_set";
+			productName = "socket-mac-cmd";
+			productReference = 727F5C8B24ADA74E006E1F20 /* socket-fd_set */;
+			productType = "com.apple.product-type.tool";
+		};
+		72A4A83F249B337B009A627A /* socket-mac-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A4A846249B337B009A627A /* Build configuration list for PBXNativeTarget "socket-mac-client" */;
+			buildPhases = (
+				72A4A840249B337B009A627A /* Sources */,
+				72A4A844249B337B009A627A /* Frameworks */,
+				72A4A845249B337B009A627A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "socket-mac-client";
+			productName = "socket-mac-cmd";
+			productReference = 72A4A849249B337B009A627A /* socket-mac-client */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +176,12 @@
 				TargetAttributes = {
 					721E1F2A232A3ED1009148AE = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					727F5C8324ADA74E006E1F20 = {
+						ProvisioningStyle = Automatic;
+					};
+					72A4A83F249B337B009A627A = {
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -110,6 +199,8 @@
 			projectRoot = "";
 			targets = (
 				721E1F2A232A3ED1009148AE /* socket-mac-cmd */,
+				72A4A83F249B337B009A627A /* socket-mac-client */,
+				727F5C8324ADA74E006E1F20 /* socket-fd_set */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +210,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				727F5C8024AD997B006E1F20 /* epoll.c in Sources */,
 				721E1F2F232A3ED1009148AE /* main.c in Sources */,
+				72A4A83C249B2616009A627A /* select.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727F5C8424ADA74E006E1F20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727F5C8C24ADA766006E1F20 /* fd_set.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A4A840249B337B009A627A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +353,38 @@
 			};
 			name = Release;
 		};
+		727F5C8924ADA74E006E1F20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		727F5C8A24ADA74E006E1F20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		72A4A847249B337B009A627A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		72A4A848249B337B009A627A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -262,6 +402,24 @@
 			buildConfigurations = (
 				721E1F33232A3ED1009148AE /* Debug */,
 				721E1F34232A3ED1009148AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		727F5C8824ADA74E006E1F20 /* Build configuration list for PBXNativeTarget "socket-fd_set" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727F5C8924ADA74E006E1F20 /* Debug */,
+				727F5C8A24ADA74E006E1F20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A4A846249B337B009A627A /* Build configuration list for PBXNativeTarget "socket-mac-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A4A847249B337B009A627A /* Debug */,
+				72A4A848249B337B009A627A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

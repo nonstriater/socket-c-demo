@@ -4,10 +4,38 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>socket-mac-cmd.xcscheme</key>
+		<key>socket-fd-set.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>socket-mac-client.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>socket-mac-cmd.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>721E1F2A232A3ED1009148AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>727F5C8324ADA74E006E1F20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>72A4A83F249B337B009A627A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

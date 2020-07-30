@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		721E1F2F232A3ED1009148AE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 721E1F2E232A3ED1009148AE /* main.c */; };
+		72A4A843249B337B009A627A /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = 72A4A83D249B329D009A627A /* client.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		721E1F29232A3ED1009148AE /* CopyFiles */ = {
+		72A4A845249B337B009A627A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		721E1F2B232A3ED1009148AE /* socket-mac-cmd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "socket-mac-cmd"; sourceTree = BUILT_PRODUCTS_DIR; };
-		721E1F2E232A3ED1009148AE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		72A4A83D249B329D009A627A /* client.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = client.c; sourceTree = "<group>"; };
+		72A4A849249B337B009A627A /* socket-mac-client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "socket-mac-client"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		721E1F28232A3ED1009148AE /* Frameworks */ = {
+		72A4A844249B337B009A627A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,7 +49,7 @@
 		721E1F2C232A3ED1009148AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				721E1F2B232A3ED1009148AE /* socket-mac-cmd */,
+				72A4A849249B337B009A627A /* socket-mac-client */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +57,7 @@
 		721E1F2D232A3ED1009148AE /* socket-mac-cmd */ = {
 			isa = PBXGroup;
 			children = (
-				721E1F2E232A3ED1009148AE /* main.c */,
+				72A4A83D249B329D009A627A /* client.c */,
 			);
 			path = "socket-mac-cmd";
 			sourceTree = "<group>";
@@ -65,21 +65,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		721E1F2A232A3ED1009148AE /* socket-mac-cmd */ = {
+		72A4A83F249B337B009A627A /* socket-mac-client */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 721E1F32232A3ED1009148AE /* Build configuration list for PBXNativeTarget "socket-mac-cmd" */;
+			buildConfigurationList = 72A4A846249B337B009A627A /* Build configuration list for PBXNativeTarget "socket-mac-client" */;
 			buildPhases = (
-				721E1F27232A3ED1009148AE /* Sources */,
-				721E1F28232A3ED1009148AE /* Frameworks */,
-				721E1F29232A3ED1009148AE /* CopyFiles */,
+				72A4A840249B337B009A627A /* Sources */,
+				72A4A844249B337B009A627A /* Frameworks */,
+				72A4A845249B337B009A627A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "socket-mac-cmd";
+			name = "socket-mac-client";
 			productName = "socket-mac-cmd";
-			productReference = 721E1F2B232A3ED1009148AE /* socket-mac-cmd */;
+			productReference = 72A4A849249B337B009A627A /* socket-mac-client */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -91,8 +91,7 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = didi;
 				TargetAttributes = {
-					721E1F2A232A3ED1009148AE = {
-						CreatedOnToolsVersion = 9.0;
+					72A4A83F249B337B009A627A = {
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -109,17 +108,17 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				721E1F2A232A3ED1009148AE /* socket-mac-cmd */,
+				72A4A83F249B337B009A627A /* socket-mac-client */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		721E1F27232A3ED1009148AE /* Sources */ = {
+		72A4A840249B337B009A627A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				721E1F2F232A3ED1009148AE /* main.c in Sources */,
+				72A4A843249B337B009A627A /* client.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +228,7 @@
 			};
 			name = Release;
 		};
-		721E1F33232A3ED1009148AE /* Debug */ = {
+		72A4A847249B337B009A627A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -237,7 +236,7 @@
 			};
 			name = Debug;
 		};
-		721E1F34232A3ED1009148AE /* Release */ = {
+		72A4A848249B337B009A627A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -257,11 +256,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		721E1F32232A3ED1009148AE /* Build configuration list for PBXNativeTarget "socket-mac-cmd" */ = {
+		72A4A846249B337B009A627A /* Build configuration list for PBXNativeTarget "socket-mac-client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				721E1F33232A3ED1009148AE /* Debug */,
-				721E1F34232A3ED1009148AE /* Release */,
+				72A4A847249B337B009A627A /* Debug */,
+				72A4A848249B337B009A627A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
